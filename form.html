@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body>
+    <form action="welcome.html" onsubmit="return validateform()" method="post">
+        <div class="container">
+            <h2 class="title">
+                Register
+            </h2>
+            <div class="inputtxt">
+            <label for="email" class="textlabel">Email</label>
+            <input type="email" name="email" id="email" class="txtbox" placeholder="Enter your email" required><!--field must not be empty-->
+            </div>
+            <div class="inputtxt">
+            <label for="password" class="textlabel">Password</label>
+            <input type="password" placeholder="Enter Password" class="txtbox"  name="password" id="password" required>
+            </div>
+            <div class="inputtxt">
+                <label for="password" class="textlabel">Confirm Password</label>
+                <input type="password" placeholder="Enter Password" class="txtbox" name="password" id="cpassword" required>
+            </div>
+          <div class="deprt">
+            <label for="Department" class="departlabel">Select Department</label>
+            <select name="department" id="Department" form="registerform" class="departselect">
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="FullStack">FullStack</option>
+                <option value="UI/UX">UI/UX</option>
+            </select>
+        </div>
+
+<div class="gender">
+            <p class="gendertext">Please select gender</p>
+             <input type="radio" id="genderradio" name="gender" value="Male" style="height:1em; width:1em;">
+             <label for="Male" class="labelradio">Male</label><br>
+             <input type="radio" id="genderradio" name="gender" value="Female" style="height:1em; width:1em;">
+             <label for="Female" class="labelradio">Female</label><br>
+            </div>
+            <div class="regtrbutn">
+            <button type="submit" class="btnregister" onclick="display()" >Register</button>
+</div>
+
+        </div>
+
+    </form>
+</body>
+<script src="./form.js"></script>
+</html>
